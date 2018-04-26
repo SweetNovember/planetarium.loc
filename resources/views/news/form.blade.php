@@ -16,7 +16,7 @@
             {{--@include('news.listThemes')--}}
         </div>
         <div class="form-group row required">
-            {!! Form::label("header","Header",["class"=>"col-form-label col-md-3 col-lg-2"]) !!}
+            {!! Foprm::label("header","Header",["class"=>"col-form-label col-md-3 col-lg-2"]) !!}
             <div class="col-md-8">
                 {!! Form::text("header", null, ["class"=>"form-control".($errors->has('header') ? "is-invalid" : ""), "autofocus", "placeholder"=>"Header"]) !!}
                 <span id="error-header" class="invalid-feedback"></span>

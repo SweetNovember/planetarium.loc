@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Open+Sans+Condensed:300|Oswald|Russo+One');
+
+body{
+    background-color: #f2f2f2;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased; /* алгоритм сглаживания текста*/
+    -webkit-overflow-scrolling: touch; /* добавит плавный скролл в блоках */
+
+    margin-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Caveat";
+    font-weight: 300;
+    color: #333;
+}
+
+p{
+    line-height: 28px; /* устанавливает величину пространства между строками,  */
+    margin-bottom: 25px;
+}
+
+.centered{
+    text-align: center;
+}
+
+a{
+    color: #afd9ee;
+    /*color: #f85c37;*/
+}
+
+a:hover, a:focus{
+    color: #7b7b7b;
+    /*color: yellow;*/
+    text-decoration: none;
+    outline: 0;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.navbar{
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-inverse{
+    background: #2d2d2d;
+    border-color: #2d2d2d ;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+    background-color: #7aacff;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #999;
+    /*color: #FFFFFF;*/
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.dropbtn{
+    background-color: #2d2d2d;
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    /*display: none;*/
+    /*position: absolute;*/
+    /*background-color: #fcf8e3;*/
+    /*min-width: 160px;*/
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    /*z-index: 1;*/
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #afd9ee;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+}
+
+#headerwrap{
+    background: url(../img/5.jpg) no-repeat center top;
+    margin-top: -18px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;    /*чтобы изображение масштабировалось*/
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1{
+    margin-top: 100px;
+    color: white;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+#headerwrap h2{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.w{
+    padding-top: 35px;
+}
+
+.w h4{
+    font-size: 25px;
+}
+
+#dg{
+    background: #e0e0e0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#dg h4{
+    font-size: 40px;
+}
+
+#dg img{
+    width: 200px;
+    height: 150px;
+}
+
+.tilt{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.tilt:hover{
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(-10deg);
+}
+
+.wb{
+    padding-top: 35px;
+    margin-bottom: 0;
+}
+
+.wb h4{
+    font-size: 35px;
+}
+
+#lg{
+    background: #ebebeb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#lg h4{
+    font-size: 45px;
+}
+
+#lg img{
+    width: 150px;
+    height: 62px;
+}
+
+#b{
+    background: #2a88bd;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#b h4{
+    color: white;
+    font-size: 45px;
+}
+
+#b p{
+    color: white;
+}
+
+#f{
+    background: #2b2b2b;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#f i{
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 20px;
+}
+ #f i:hover{
+     color: #afd9ee;
+ }
+
+ .article{
+     width: 25%;
+     height: 300px;
+     margin:50px 10px;
+     /*margin: 0 auto;*/
+     padding: 10px;
+     background-color: #f7f7f7;
+     /*display: flex;*/
+     /*justify-content: center;*/
+     float: left;
+ }
+
+ .article img{
+     margin-top: -40px;
+     width: 200px;
+     height: 150px;
+     border: 1px salmon;
+ }
+
+ #search{
+     padding: 10px;
+     font-size: 17px;
+     border: 1px solid grey;
+     float: left;
+     width: 80%;
+     height: 40px;
+     background: #f7f7f7;
+ }
+
+ #button-search{
+     float: left;
+     width: 20%;
+     height: 40px;
+     padding: 10px;
+     background: #2196F3;
+     color: white;
+     font-size: 17px;
+     border: 1px solid grey;
+     border-left: none;
+     cursor: pointer;
+ }
+
+ #button-search:hover{
+     background: #0b7dda;
+ }

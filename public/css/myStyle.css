@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Russo+One');
+
+.article {
+    width: 25%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    float: left
+}
+
+.detail{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    color: #555555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.detail-header{
+    margin: 0 auto;
+    font-family: "Open Sans Condensed";
+    font-weight: 500;
+    font-size: 30px;
+    text-align: justify;
+    color: red;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.article .dt{
+    margin: 5px;
+}
+
+.article .head{
+    font-weight: bold;
+    font-size: large;
+    text-align: justify;
+    width: 70%;
+    margin: 10px;
+    background-color: #afd9ee;
+    max-width: 700px;
+}
+
+.article img {
+    width: 230px;
+    height: 150px;
+    margin: -30px 25px 25px;
+    background-color: #9d9d9d;
+}

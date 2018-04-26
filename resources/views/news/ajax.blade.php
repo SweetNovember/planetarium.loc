@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.default')
 
 <style>
     .loading {
@@ -32,7 +32,8 @@
         @include('news.index')
     </div>
     <div class="loading">
-        <i class="fa fa-refresh fa-spin fa-2x fa-tw"></i>
+        {{--<i class="fa fa-refresh fa-spin fa-2x fa-tw"></i>--}}
+        <i class="fas fa-sync-alt fa-spinner"></i>
         <br>
         <span>Loading</span>
     </div>

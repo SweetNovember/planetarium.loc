@@ -27,8 +27,9 @@ class NewsController extends Controller
         $news = new News();
         $news = $news->where('message', 'like', '%' . $request->session()->get('search') . '%')
             ->orderBy('create_date', 'desc')
-            ->paginate(5);
+            ->paginate(6);
 
+        $news_images = 0;
         if ($request->ajax()) {
             return view('news.index', compact('news'));
         } else {
@@ -184,4 +185,8 @@ class NewsController extends Controller
 
     }
 
+    public function css(Request $request)
+    {
+        return view('layouts.default');
+    }
 }

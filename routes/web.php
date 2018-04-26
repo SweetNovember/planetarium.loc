@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'events'], function () {
     Route::get('/', 'EventController@index')->name('indexEvent');
     Route::get('show/{id}', 'EventController@show');
+    Route::get('detail/{id}', 'HomeController@show');
 });
 
 Route::group(['prefix'=>'news'], function (){
@@ -29,6 +30,7 @@ Route::group(['prefix'=>'news'], function (){
     Route::get('show/{id}', 'NewsController@show');
     Route::delete('delete/{id}', 'NewsController@destroy');
     Route::get('readXML', 'NewsController@readXML');
+    Route::get('css','NewsController@css');
 });
 
 Auth::routes();

@@ -29,7 +29,7 @@
     @endif
 
     <div id="content">
-        @include('events.index')
+        @include('/home')
     </div>
     <div class="loading">
         {{--<i class="fa fa-refresh fa-spin fa-2x fa-tw"></i>--}}

@@ -44,7 +44,7 @@ class HomeController extends Controller
             $query->select('users_events.event_id')
                 ->from(with(new UsersEvents())->getTable())
                 ->where('users_events.user_id', '=', Auth::user()->getAuthIdentifier());
-        })->orderBy('date_time_start', 'desc')->paginate(5);
+        })->orderBy('date_time_start', 'desc')->paginate(6);
 //        var_dump($events);
 //        $events = $events->where('information', 'like', '%' . $request->session()->get('search') . '%')
 //            ->orderBy('date_time_start', 'desc')
@@ -54,7 +54,14 @@ class HomeController extends Controller
         if ($request->ajax()) {
             return view('home', compact('events'));
         } else {
-            return view('events.ajax', compact('events'));
+            return view('events.ajaxHome', compact('events'));
+        }
+    }
+
+    public function show(Request $request, $id)
+    {
+        if ($request->isMethod('get')) {
+            return view('events.detailHome', ['item' => Event::find($id)]);
         }
     }
 }

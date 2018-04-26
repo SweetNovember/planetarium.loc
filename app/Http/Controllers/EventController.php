@@ -28,7 +28,7 @@ class EventController extends Controller
         $events = new Event();
         $events = $events->where('information', 'like', '%' . $request->session()->get('search') . '%')
             ->orderBy('date_time_start', 'desc')
-            ->paginate(5);
+            ->paginate(6);
         //->orderBy($request->get('field'), $request->session()->get('sort'))
         if ($request->ajax()) {
             return view('events.index', compact('events'));
